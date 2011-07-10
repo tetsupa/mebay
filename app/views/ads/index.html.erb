@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>All Ads</title>
+</head>
+<body>
+<h1>All Ads</h1>
+<ul>
+<% @ads.each do |ad| %>
+<li><a href="/ads/<%= ad.id %>"><%= ad.name %></a>
+  [<a href="/ads/<%= ad.id %>/delete">Delete</a>]</li>
+<% end %>  
+</ul>
+</body>
+</html>
