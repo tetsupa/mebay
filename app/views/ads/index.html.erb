@@ -10,5 +10,8 @@
   [<a href="/ads/<%= ad.id %>/delete">Delete</a>]</li>
 <% end %>  
 </ul>
+<% form_tag( { :controller => 'ads', :action => 'new' } ) do  %>
+  <p><%= submit_tag "New" %></p>
+<% end %>
 </body>
 </html>
